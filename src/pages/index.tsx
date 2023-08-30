@@ -1,9 +1,9 @@
-import { Body, H3, Icon, defaultTheme as theme } from '@prisma/lens/dist/web'
 import { useLocation } from '@reach/router'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as React from 'react'
 import styled from 'styled-components'
 
+import { Icon } from '../components/Icon'
 import Layout from '../components/layout'
 import Link from '../components/link'
 import SEO from '../components/seo'
@@ -16,6 +16,28 @@ import MySQLSimple from '../icons/technologies/MySQLSimple'
 import PlanetScale from '../icons/technologies/PlanetScale'
 import PostgresSQLSimple from '../icons/technologies/PostgresSQLSimple'
 import SQLite from '../icons/technologies/SQLite'
+import { defaultTheme as theme } from '../theme'
+
+export const Body = styled.div`
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0em;
+  line-height: 140%;
+`
+
+export const H3 = styled.h3`
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  line-height: 110%;
+  @media (min-width: 940px) {
+    font-size: 36px;
+  }
+`
 
 const H4 = styled.h4`
   font-family: 'Barlow';
